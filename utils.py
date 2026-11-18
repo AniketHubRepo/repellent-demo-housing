@@ -14,4 +14,4 @@ def load_boston():
     return df
 
 def eval_metrics(y_true, y_pred):
-    return mean_squared_error(y_true, y_pred), r2_score(y_true, y_pred)
+    return r2_score(y_true, y_pred), mean_squared_error(y_true, y_pred)
